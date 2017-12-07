@@ -1,0 +1,9 @@
+{
+	"type": "pdo",
+	"dbms": "MySQL",
+	"dbname": "hlm_repo",
+	"user": "hlm_dba",
+	"password": "hlmadmin",
+	"address": "127.0.0.1",
+	"port": 3306
+}
