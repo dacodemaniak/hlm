@@ -38,8 +38,10 @@ $user = $session->user;
 			</header>
 		</div>
 		
-		<!--  le javascript associé -->
+		<!--  Charge les javascripts pour la gestion côté client -->
 		<script src="_assets/node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="_assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="_assets/node_modules/app/_app.js"></script>
 	</body>
 </html>

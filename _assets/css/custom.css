@@ -1,0 +1,9 @@
+@CHARSET "utf-8";
+
+/**
+* Redéfinition du label
+**/
+label.label{
+	color: #333;
+	text-align: left;
+}

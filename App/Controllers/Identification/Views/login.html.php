@@ -12,6 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<title>Office HLM - Identification</title>
+		
+		<link href="_assets/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -29,7 +31,7 @@
 				<form method="post" action="index.php?mod=identification" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<fieldset>
 						<legend>
-							Identifiez-vous
+							Identification
 						</legend>
 						<div class="form-group">
 							<label class="label">Identifiant :</label>
@@ -40,12 +42,18 @@
 							<input type="password" name="password" class="form-control">
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="center-block">
 						<button type="submit" name="identification" class="btn btn-primary">Connexion</button>
 						<button type="reset" name="cancel" class="btn btn-warning">Effacer</button>
 					</fieldset>
 				</form>
 			</section>
 		</div>
+		
+		<!--  Charge les javascripts pour la gestion côté client -->
+		<script src="_assets/node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="_assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="_assets/node_modules/app/_app.js"></script>
 	</body>
 </html>
