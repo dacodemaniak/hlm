@@ -41,6 +41,9 @@ class Sessions implements \Iterator {
 		if(!in_array($key, $this->keys)){
 			$this->keys[] = $key;
 		}
+		if(is_object($value)){
+			$value = serialize($value);
+		}
 		$_SESSION[$key] = $value; // Ajoute la clé et la valeur associée dans la session
 		
 		return $this;
@@ -75,6 +78,10 @@ class Sessions implements \Iterator {
 	 */
 	public function __get($key){
 		if(in_array($key, $this->keys)){
+			if($key == "user"){
+				return unserialize($_SESSION[$key]);
+			}
+			
 			return $_SESSION[$key];
 		}
 	}

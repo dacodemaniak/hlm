@@ -5,7 +5,9 @@
 * @version 0.1.0
 **/
 // Charge la classe de gestion de la session
-require_once("_Classes/Sessions/Sessions.class.php");
+require_once(dirname(__FILE__) . "/../../../../_Classes/Sessions/Sessions.class.php");
+require_once(dirname(__FILE__) . "/../../Identification/User.class.php");
+
 $session = new Sessions();
 $user = $session->user;
 ?>

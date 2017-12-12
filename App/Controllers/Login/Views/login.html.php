@@ -14,6 +14,7 @@
 		<title>Office HLM - Identification</title>
 		
 		<link href="_assets/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="_assets/node_modules/animate.css/animate.min.css" rel="stylesheet">
 		<link href="_assets/css/custom.css" rel="stylesheet">
 	</head>
 	
@@ -29,7 +30,7 @@
 			</header>
 			
 			<section class="row">
-				<form method="post" action="index.php?mod=identification" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-inline">
+				<form id="login" method="post" action="index.php?mod=identification" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-inline">
 					<fieldset class="container">
 						<legend>
 							Identification
